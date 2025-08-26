@@ -14,7 +14,7 @@ int main() {
     float pib = 30.0000;
     char estado[20] = "Ceará";
     char cidade[20] = "Fortaleza";
-    char codigo = "C01, C02, C03, C04";
+    char codigo [5]= "C01";
 
     printf("Pontos turísticos: %d\n", pontos);
     printf("População: %d\n", populacao);
@@ -22,7 +22,7 @@ int main() {
     printf("PIB: %f\n", pib);
     printf("Estado: %s\n", "Ceará");
     printf("Cidade: %s\n", "Fortaleza");
-    printf("Código da carta: %c\n", "C01, C02, C03, C04");
+    printf("Código da carta: %s\n", "C01");
 
 
 
