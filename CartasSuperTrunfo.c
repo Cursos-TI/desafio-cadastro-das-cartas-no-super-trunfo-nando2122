@@ -12,17 +12,30 @@ int main() {
     int populacao = 100000;
     float area = 2.000000;
     float pib = 30.0000;
-    char estado[20] = "Ceará";
+    char estado[20] = "Ceara";
     char cidade[20] = "Fortaleza";
-    char codigo [5]= "C01";
+    char codigo [20]= "C01";
 
-    printf("Pontos turísticos: %d\n", pontos);
-    printf("População: %d\n", populacao);
-    printf("Área em km²: %f\n", area);
-    printf("PIB: %f\n", pib);
-    printf("Estado: %s\n", "Ceará");
-    printf("Cidade: %s\n", "Fortaleza");
-    printf("Código da carta: %s\n", "C01");
+    printf("Digite quantos pontos turísticos tem: \n");
+    scanf("%d", &pontos);
+    
+    printf("Digite o número da população: \n");
+    scanf("%d", &populacao);
+
+    printf("Digite quanto tem de área em km²: \n");
+    scanf("%f", &area);
+
+    printf("Digite o número do PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Digite o Estado: \n");
+    scanf("%s", &estado);
+
+    printf("Digite a cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", &codigo);
 
 
 
