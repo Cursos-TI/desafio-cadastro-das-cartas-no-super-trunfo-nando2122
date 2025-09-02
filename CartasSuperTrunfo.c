@@ -12,20 +12,22 @@ int main() {
     int populacao = 100000;
     float area = 2.00000;
     float pib = 30.0000;
-    char estado[20] = "A";
-    char cidade[20] = "Fortaleza";
+    char estado [10] = "A";
+    char cidade [20] = "Fortaleza";
     char codigo [20]= "A01";
+    float densidade;
+    float pibcapita;
 
-    printf("Digite quantos pontos turísticos tem: \n");
+    printf("Digite quantos pontos turísticos tem: %d\n");
     scanf("%d", &pontos);
     
-    printf("Digite o número da população: \n");
+    printf("Digite o número da população: %d\n");
     scanf("%d", &populacao);
 
-    printf("Digite quanto tem de área em km²: \n");
+    printf("Digite quanto tem de área em km²: %f\n");
     scanf("%f", &area);
 
-    printf("Digite o número do PIB: \n");
+    printf("Digite o número do PIB: %f\n");
     scanf("%f", &pib);
 
     printf("Digite o Estado: \n");
@@ -36,6 +38,12 @@ int main() {
 
     printf("Digite o código da carta: \n");
     scanf("%s", codigo);
+
+    printf("Densidade populacional: %f\n");
+    scanf("%f", &densidade);
+
+    printf("PIB per capita: %f\n");
+    scanf("%f", &pibcapita);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
