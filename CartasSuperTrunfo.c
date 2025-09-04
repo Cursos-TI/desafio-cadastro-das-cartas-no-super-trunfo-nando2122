@@ -9,9 +9,9 @@
 int main() {
 
     int pontos = 30;
-    int populacao = 100000;
-    float area = 2.00000;
-    float pib = 30.0000;
+    int populacao = 1000000;
+    float area = 2.00500;
+    float pib = 3.80000;
     char estado [10] = "A";
     char cidade [20] = "Fortaleza";
     char codigo [20]= "A01";
@@ -24,7 +24,7 @@ int main() {
     printf("Digite o número da população: \n");
     scanf("%d", &populacao);
 
-    printf("Digite quanto tem de área em km²: %\n");
+    printf("Digite quanto tem de área em km²: \n");
     scanf("%f", &area);
 
     printf("Digite o número do PIB: \n");
@@ -41,11 +41,11 @@ int main() {
 
     densidade = populacao / area;
 
-    printf("Densidade populacional: %f\n", densidade);
+    printf("Densidade populacional: %.2f\n", densidade);
     
     pibcapita = pib / populacao;
 
-    printf("PIB per capita: %f\n", pibcapita);
+    printf("PIB per capita: %.2f\n", pibcapita);
     
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
