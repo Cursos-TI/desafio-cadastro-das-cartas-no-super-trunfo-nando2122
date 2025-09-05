@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
 
     int cartaA, cartaB;
@@ -16,11 +10,11 @@ int main() {
     int populacaocartaA = 100000;
     int populacaocartaB = 230000;
 
-    float areacartaA = 2.00000;
-    float areacartaB = 1.90000;
+    float areacartaA = 2.000000;
+    float areacartaB = 1.900000;
 
-    float pibcartaA = 3.000000;
-    float pibcartaB = 4.700000;
+    float pibcartaA = 3.00000;
+    float pibcartaB = 4.70000;
 
     char estadocartaA [10] = "A";
     char estadocartaB [10] = "B";
@@ -44,14 +38,14 @@ int main() {
     printf("Digite o número da população da cartaB: \n");
     scanf("%d", &populacaocartaB);
 
-    printf("Digite quanto tem de área em km² a cartaA: \n");
+    printf("Digite quanto tem de área em km² a cartaA: %f milhões\n");
     scanf("%f", &areacartaA);
-    printf("Digite quanto tem de área em km² a cartaB: \n");
+    printf("Digite quanto tem de área em km² a cartaB: %f milhões\n");
     scanf("%f", &areacartaB);
 
-    printf("Digite o número do PIB da cartaA: \n");
+    printf("Digite o número do PIB da cartaA: %f bilhões de reais\n");
     scanf("%f", &pibcartaA);
-    printf("Digite o número do PIB da cartaB: \n");
+    printf("Digite o número do PIB da cartaB: %f bilhões de reais\n");
     scanf("%f", &pibcartaB);
 
     printf("Digite o Estado da cartaA: \n");
@@ -72,14 +66,14 @@ int main() {
     densidadecartaA = populacaocartaA / areacartaA;
     densidadecartaB = populacaocartaB / areacartaB;
 
-    pibcapitacartaA = pibcartaA / populacaocartaA;
-    pibcapitacartaB = pibcartaB / populacaocartaB;
+    pibcapitacartaA = populacaocartaA / pibcartaA;
+    pibcapitacartaB = populacaocartaB / pibcartaB;
 
-    printf("Densidade populacional: %.2f\n", densidadecartaA);
-    printf("Densidade populacional: %.2f\n", densidadecartaB);
+    printf("Densidade populacional da cartaA é: %.2f hab/km²\n", densidadecartaA);
+    printf("Densidade populacional da cartaB é: %.2f hab/km²\n", densidadecartaB);
 
-    printf("PIB per capita: %.2f\n", pibcapitacartaA);
-    printf("PIB per capita: %.2f\n", pibcapitacartaB);
+    printf("PIB per capita: %.2f reais\n", pibcapitacartaA);
+    printf("PIB per capita: %.2f reais\n", pibcapitacartaB);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
