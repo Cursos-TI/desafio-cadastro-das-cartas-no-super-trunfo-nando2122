@@ -28,6 +28,8 @@ int main() {
     float densidadecartaA, densidadecartaB;
     float pibcapitacartaA, pibcapitacartaB;
 
+    printf("Carta A e Carta B\n");
+
     printf("Digite quantos pontos turísticos tem a cartaA: \n");
     scanf("%d", &pontoscartaA);
     printf("Digite quantos pontos turísticos tem a cartaB: \n");
