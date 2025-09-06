@@ -3,6 +3,7 @@
 int main() {
 
     int cartaA, cartaB;
+    int somaA, somaB;
 
     int pontoscartaA = 30;
     int pontoscartaB = 40;
@@ -40,14 +41,14 @@ int main() {
     printf("Digite o número da população da cartaB: \n");
     scanf("%d", &populacaocartaB);
 
-    printf("Digite quanto tem de área em km² a cartaA: %f milhões\n");
+    printf("Digite quanto tem de área em km² a cartaA: milhões\n");
     scanf("%f", &areacartaA);
-    printf("Digite quanto tem de área em km² a cartaB: %f milhões\n");
+    printf("Digite quanto tem de área em km² a cartaB: milhões\n");
     scanf("%f", &areacartaB);
 
-    printf("Digite o número do PIB da cartaA: %f bilhões de reais\n");
+    printf("Digite o número do PIB da cartaA: bilhões de reais\n");
     scanf("%f", &pibcartaA);
-    printf("Digite o número do PIB da cartaB: %f bilhões de reais\n");
+    printf("Digite o número do PIB da cartaB: bilhões de reais\n");
     scanf("%f", &pibcartaB);
 
     printf("Digite o Estado da cartaA: \n");
@@ -77,17 +78,22 @@ int main() {
     printf("PIB per capita: %.2f reais\n", pibcapitacartaA);
     printf("PIB per capita: %.2f reais\n", pibcapitacartaB);
 
+    
+    somaA = populacaocartaA + areacartaA + pibcartaA + pontoscartaA + pibcapitacartaA;
+    somaB = populacaocartaB + areacartaB + pibcartaB + pontoscartaB + pibcapitacartaB;
 
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("O Super Poder da carta A é: %f\n", somaA);
+    printf("O Super Poder da carta B é: %f\n", somaB);
+
+    printf("***Comparação de Cartas***\n");
+
+    printf("A carta A tem mais população que a carta B? %d\n", populacaocartaA > populacaocartaB);
+    printf("A carta A tem mais área que a carta B? %d\n", areacartaA > areacartaB);
+    printf("A carta A tem mais PIB que a carta B? %d\n", pibcartaA > pibcartaB);
+    printf("A carta A tem mais pontos turísticos que a carta B? %d\n", pontoscartaA > pontoscartaB);
+    printf("A carta A tem menor densidade populacional que a carta B? %d\n", densidadecartaA < densidadecartaB);
+    printf("A carta A tem mais PIB per capita que a carta B? %d\n", pibcapitacartaA > pibcapitacartaB);
+    printf("A carta A tem mais Super Poder que a carta B? %d\n", somaA > somaB);
 
     return 0;
 }
