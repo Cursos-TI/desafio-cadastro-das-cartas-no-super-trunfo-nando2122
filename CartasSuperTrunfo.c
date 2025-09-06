@@ -95,5 +95,7 @@ int main() {
     printf("A carta A tem mais PIB per capita que a carta B? %d\n", pibcapitacartaA > pibcapitacartaB);
     printf("A carta A tem mais Super Poder que a carta B? %d\n", somaA > somaB);
 
+    //fiz o meu melhor e espero que dê tudo certo
+
     return 0;
 }
